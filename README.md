@@ -1,5 +1,5 @@
-> This is a fork of [@diffusion-studio/vits-web](https://github.com/diffusion-studio/vits-web) for use
-> of PiperTTS modules inside of a browser/Electron for AnythingLLM.
+> This is a fork of [@mintplex/piper-tts-web](https://github.com/Mintplex-Labs/piper-tts-web) for use
+> of PiperTTS modules inside of a browser/Electron. The key difference here is the model - I have configured to use the Indian English model.
 > A big shout-out goes to [Rhasspy Piper](https://github.com/rhasspy/piper), who open-sourced all the currently available models > (MIT License) and to [@jozefchutka](https://github.com/jozefchutka) who came up with the wasm build steps.
 
 # Run PiperTTS based text-to-speech in the browser powered by the [ONNX Runtime](https://onnxruntime.ai/)
