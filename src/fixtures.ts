@@ -3,7 +3,7 @@ import { VoiceId } from "./types";
 /**
  * Location of the ml models
  */
-export const HF_BASE = 'https://huggingface.co/diffusionstudio/piper-voices/resolve/main';
+export const HF_BASE = 'https://huggingface.co/the-vedantic-coder/text-to-speech-en-US-web/resolve/main';
 
 /**
  * Inference runtime libary base path
