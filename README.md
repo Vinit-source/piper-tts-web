@@ -1,6 +1,8 @@
 > This is a fork of [@mintplex-labs/piper-tts-web]([https://github.com/diffusion-studio/vits-web](https://github.com/Mintplex-Labs/piper-tts-web/)) for use
 > of PiperTTS modules inside of a browser/Electron for AnythingLLM.
-> A big shout-out goes to [OHF Piper1](https://github.com/OHF-Voice/piper1-gpl), who open-sourced all the currently available models > (MIT License). The updated fork is present in [Vinit-source/piper1-gpl](https://github.com/Vinit-source/piper1-gpl).
+> A big shout-out goes to [OHF Piper1](https://github.com/OHF-Voice/piper1-gpl), who open-sourced all the currently available models. The updated fork is present in [Vinit-source/piper1-gpl](https://github.com/Vinit-source/piper1-gpl).
+
+> This repository uses `en_IN-spicor-medium` voice which was trained using the `en_US-ljspeech-medium` voice for 89 epochs on the IISc's SPICOR English dataset. More details about the dataset can be found [here](https://spiredatasets.ee.iisc.ac.in/)
 
 # Run PiperTTS based text-to-speech in the browser powered by the [ONNX Runtime](https://onnxruntime.ai/)
 
@@ -47,7 +49,7 @@ audio.play();
 
 With the initial run of the predict function you will download the model which will then be stored in your [Origin private file system](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system). You can also do this manually in advance *(recommended)*, as follows:
 ```typescript
-await tts.download('en_US-hfc_female-medium', (progress) => {
+await tts.download('en_IN-spicor-medium', (progress) => {
   console.log(`Downloading ${progress.url} - ${Math.round(progress.loaded * 100 / progress.total)}%`);
 });
 ```

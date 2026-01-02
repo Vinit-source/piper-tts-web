@@ -1,8 +1,8 @@
 {
-  "name": "@mintplex-labs/piper-tts-web",
+  "name": "@the-vedantic-coder/piper-tts-web",
   "private": false,
-  "version": "1.0.3",
-  "description": "Fork of @diffusion-studio/vits-web for easier built-in PiperTTS use.",
+  "version": "1.0.9",
+  "description": "Fork of @mintplex-labs/piper-tts-web for easier built-in PiperTTS use.",
   "type": "module",
   "files": [
     "dist",
@@ -10,7 +10,7 @@
   ],
   "module": "./dist/piper-tts-web.js",
   "types": "./dist/index.d.ts",
-  "author": "team@mintplexlabs.com",
+  "author": "Vinit Gore <vinitgore1234@gmail.com>",
   "exports": {
     ".": {
       "import": "./dist/piper-tts-web.js",
@@ -22,9 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Mintplex-Labs/piper-tts-web.git"
+    "url": "https://github.com/navgurukul/piper-tts-web.git"
   },
-  "homepage": "https://github.com/Mintplex-Labs/piper-tts-web#readme",
+  "homepage": "https://github.com/navgurukul/piper-tts-web",
   "license": "MIT",
   "keywords": [
     "vits",
