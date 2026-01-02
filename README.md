@@ -1,6 +1,6 @@
-> This is a fork of [@diffusion-studio/vits-web](https://github.com/diffusion-studio/vits-web) for use
+> This is a fork of [@mintplex-labs/piper-tts-web]([https://github.com/diffusion-studio/vits-web](https://github.com/Mintplex-Labs/piper-tts-web/)) for use
 > of PiperTTS modules inside of a browser/Electron for AnythingLLM.
-> A big shout-out goes to [Rhasspy Piper](https://github.com/rhasspy/piper), who open-sourced all the currently available models > (MIT License) and to [@jozefchutka](https://github.com/jozefchutka) who came up with the wasm build steps.
+> A big shout-out goes to [OHF Piper1](https://github.com/OHF-Voice/piper1-gpl), who open-sourced all the currently available models > (MIT License). The updated fork is present in [Vinit-source/piper1-gpl](https://github.com/Vinit-source/piper1-gpl).
 
 # Run PiperTTS based text-to-speech in the browser powered by the [ONNX Runtime](https://onnxruntime.ai/)
 
@@ -9,7 +9,6 @@
 ### Caching for client
 
 You can leverage `TTSSessions` for a faster inference. (see index.js for implementation)
-Credit to [this PR](https://github.com/diffusion-studio/vits-web/pull/5) for the starting point.
 
 ### Local WASM/Loading
 
@@ -23,19 +22,19 @@ This is a frontend library and will not work with NodeJS.
 ## Usage
 First of all, you need to install the library:
 ```bash
-yarn add @mintplex-labs/piper-tts-web
+npm install @the-vedantic-coder/piper-tts-web
 ```
 
 Then you're able to import the library like this (ES only)
 ```typescript
-import * as tts from '@mintplex-labs/piper-tts-web';
+import * as tts from '@the-vedantic-coder/piper-tts-web';
 ```
 
 Now you can start synthesizing speech!
 ```typescript
 const wav = await tts.predict({
   text: "Text to speech in the browser is amazing!",
-  voiceId: 'en_US-hfc_female-medium',
+  voiceId: 'en_IN-spicor-medium',
 });
 
 const audio = new Audio();
@@ -59,12 +58,12 @@ If you want to know which models have already been stored, do the following
 ```typescript
 console.log(await tts.stored());
 
-// will log ['en_US-hfc_female-medium']
+// will log ['en_IN-spicor-medium']
 ```
 
 You can remove models from opfs by calling
 ```typescript
-await tts.remove('en_US-hfc_female-medium');
+await tts.remove('en_IN-spicor-medium');
 
 // alternatively delete all
 
