@@ -1,7 +1,7 @@
 {
   "name": "@the-vedantic-coder/piper-tts-web",
   "private": false,
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Fork of @mintplex-labs/piper-tts-web for easier built-in PiperTTS use.",
   "type": "module",
   "files": [
@@ -20,11 +20,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/navgurukul/piper-tts-web.git"
-  },
-  "homepage": "https://github.com/navgurukul/piper-tts-web",
   "license": "MIT",
   "keywords": [
     "vits",

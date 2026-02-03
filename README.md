@@ -1,12 +1,16 @@
+> **UPDATE: 2026-01-24:** This repository is no longer actively maintained and deprecated. NavGurukul Foundation for Social Welfare holds the rights to this repository. For the latest updates and versions, please refer to [NavGurukul's GitHub repository](https://github.com/navgurukul/piper-tts-web.git).
+
 > This is a fork of [@mintplex-labs/piper-tts-web]([https://github.com/diffusion-studio/vits-web](https://github.com/Mintplex-Labs/piper-tts-web/)) for use
-> of PiperTTS modules inside of a browser/Electron for AnythingLLM.
+> of PiperTTS modules inside of a browser.
 > A big shout-out goes to [OHF Piper1](https://github.com/OHF-Voice/piper1-gpl), who open-sourced all the currently available models. The updated fork is present in [Vinit-source/piper1-gpl](https://github.com/Vinit-source/piper1-gpl).
 
 > This repository uses `en_IN-spicor-medium` voice which was trained using the `en_US-ljspeech-medium` voice for 89 epochs on the IISc's SPICOR English dataset. More details about the dataset can be found [here](https://spiredatasets.ee.iisc.ac.in/)
 
 # Run PiperTTS based text-to-speech in the browser powered by the [ONNX Runtime](https://onnxruntime.ai/)
 
-## Difference from the original
+### Difference from the original
+- Includes an Indian English voice `en_IN-spicor-medium` by default.
+- Works well with all the other voices from the original repository.
 
 ### Caching for client
 
